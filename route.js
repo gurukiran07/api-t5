@@ -71,7 +71,7 @@ router.put("/update/:id", (req, res) => {
 router.get("/user/:id", (req, res) => {
     const id = parseInt(req.params.id)
     if (id < users_data.length){
-        const user = users_data.at(id)
+        const user = users_data[id]
         res.status(200).json({
             success: true,
             user: user

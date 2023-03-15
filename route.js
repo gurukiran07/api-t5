@@ -49,7 +49,7 @@ router.put("/update/:id", (req, res) => {
         const user = req.body;
         users_data[id] = {"email": user.email, "firstName": user.firstName, id: id}
         res.status(200).json({
-            message: "Users udpated",
+            message: "User udpated",
             success: true
         })
     }
